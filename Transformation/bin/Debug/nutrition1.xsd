@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="product">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="servingSize" type="xs:string" />
+        <xs:element name="totalCalories" type="xs:unsignedByte" />
+        <xs:element name="sodium" type="xs:string" />
+        <xs:element name="cholesterol" type="xs:string" />
+        <xs:element name="fat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="calories" type="xs:unsignedByte" />
+              <xs:element name="grams" type="xs:unsignedByte" />
+              <xs:element name="saturatedFat" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="carbohydrates" type="xs:string" />
+        <xs:element name="fiber" type="xs:string" />
+        <xs:element name="sugar" type="xs:string" />
+        <xs:element name="protein" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
